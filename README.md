@@ -4,6 +4,8 @@ This project predicts **emotions** like joy, sadness, anger, etc., from input te
 
 It uses the [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion) dataset and includes complete preprocessing, model training, and a Gradio-based user interface.
 
+This project had an initial aim of 85%+ accuracy which has been completely met with actual validation accuracy of ~90%
+
 ---
 
 ##  Emotion Classes
