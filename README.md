@@ -54,19 +54,18 @@ The model classifies input into one of the following six emotions:
 
 ---
 
-##  Run the Gradio App
+## 🛠 Setup Instructions
 
-###  Install dependencies:
+### 1. Install Dependencies
 
-```bash
-pip install gradio tensorflow nltk
-```
-
-### ▶ Launch the app:
+Make sure you have Python installed. Then run:
 
 ```bash
+pip install -r requirements.txt
 python gradio_app.py
+
 ```
+Your browser will open at http://127.0.0.1:7860 with the Emotion Detection interface.
 
 A browser window will open with a simple interface for emotion prediction.
 
