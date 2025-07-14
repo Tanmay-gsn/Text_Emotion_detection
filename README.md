@@ -7,13 +7,19 @@ It detects emotion in a class of 6 -> [sadness,joy,love,anger,fear,surprise]
 
 Project Structure:
 
-├── prepro.ipynb           # Text preprocessing
-├── emo_lstm_model.ipynb   # Model building and training
-├── gradio_app.py          # Gradio UI code
-├── lstm_emo_model.h5      # Trained LSTM model
-├── tokenizer.pkl          # Saved tokenizer
-├── label_encoder.pkl      # Saved label encoder
-├── README.md              # Project documentation
+-> prepro.ipynb           # Text preprocessing
+
+-> emo_lstm_model.ipynb   # Model building and training
+
+-> gradio_app.py          # Gradio UI code
+
+-> lstm_emo_model.h5      # Trained LSTM model
+
+-> tokenizer.pkl          # Saved tokenizer
+
+-> label_encoder.pkl      # Saved label encoder
+
+─> README.md              # Project documentation
 
 ## How It Works:
 Text Cleaning:
