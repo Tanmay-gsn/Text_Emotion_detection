@@ -13,12 +13,12 @@ nltk.download('punkt')
 nltk.download('wordnet')
 
 # Load model and files
-model = load_model("/kaggle/input/emo-lstm/lstm_emo_model.h5")
+model = load_model("lstm_emo_model.h5")
 
-with open("/kaggle/input/emo-lstm/tokenizer.pkl", "rb") as f:
+with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
-with open("/kaggle/input/emo-lstm/label_encoder.pkl", "rb") as f:
+with open("label_encoder.pkl", "rb") as f:
     le = pickle.load(f)
 
 # Preprocessing
