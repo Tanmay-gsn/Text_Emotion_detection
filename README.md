@@ -1,4 +1,4 @@
-# 🧠 Text Emotion Detection using LSTM
+#  Text Emotion Detection using LSTM
 
 This project predicts **emotions** like joy, sadness, anger, etc., from input text using **Natural Language Processing (NLP)** and a **deep learning LSTM model**.
 
@@ -6,7 +6,7 @@ It uses the [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion)
 
 ---
 
-## 🔥 Emotion Classes
+##  Emotion Classes
 
 The model classifies input into one of the following six emotions:
 
@@ -16,7 +16,7 @@ The model classifies input into one of the following six emotions:
 
 ---
 
-## 🗂️ Project Structure
+## 🗂 Project Structure
 
 ```
 📁 Text_Emotion_detection/
@@ -32,35 +32,35 @@ The model classifies input into one of the following six emotions:
 
 ---
 
-## ⚙️ How It Works
+## ⚙ How It Works
 
-### ✨ Preprocessing
+###  Preprocessing
 - Lowercase conversion
 - URL and special character removal
 - Tokenization
 - Lemmatization
 - Sequence padding
 
-### ✨ Model Architecture
+###  Model Architecture
 - 2-layer **Bidirectional LSTM**
 - Dropout layers for regularization
 - Dense softmax output for classification
 
-### ✨ Inference
+###  Inference
 - Input text is cleaned, tokenized, padded, and passed to the model
 - Predicted emotion is returned as output
 
 ---
 
-## 🚀 Run the Gradio App
+##  Run the Gradio App
 
-### ✅ Install dependencies:
+###  Install dependencies:
 
 ```bash
 pip install gradio tensorflow nltk
 ```
 
-### ▶️ Launch the app:
+### ▶ Launch the app:
 
 ```bash
 python gradio_app.py
@@ -70,7 +70,7 @@ A browser window will open with a simple interface for emotion prediction.
 
 ---
 
-## 🖼️ Demo Screenshot
+## 🖼 Demo Screenshot
 
 Here’s how the Gradio interface looks:
 
@@ -78,7 +78,7 @@ Here’s how the Gradio interface looks:
 
 ---
 
-## 📊 Dataset Used
+##  Dataset Used
 
 - **Dataset**: [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion)
 - **Total Samples**: ~20k
@@ -86,16 +86,7 @@ Here’s how the Gradio interface looks:
 
 ---
 
-## 🛠️ Future Improvements
-
-- Add attention mechanism
-- Integrate pre-trained embeddings (like GloVe)
-- Use transformer-based models like BERT
-- Host the app online using Streamlit or Hugging Face Spaces
-
----
-
-## 👨‍💻 Author
+##  Author
 
 - **Tanmay GSN**
 - GitHub: [Tanmay-gsn](https://github.com/Tanmay-gsn)
