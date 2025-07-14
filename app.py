@@ -11,6 +11,7 @@ from tensorflow.keras.models import load_model
 # Download required NLTK data
 nltk.download('punkt')
 nltk.download('wordnet')
+nltk.download('punkt_tab')
 
 # Load model and files
 model = load_model("lstm_emo_model.h5")
