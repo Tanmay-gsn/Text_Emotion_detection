@@ -1,48 +1,107 @@
-# Text_Emotion_detection
+# 🧠 Text Emotion Detection using LSTM
 
-This project detects emotions (like joy, sadness, anger, etc.) from a given piece of text using Natural Language Processing (NLP) and a deep learning model (LSTM).
+This project predicts **emotions** like joy, sadness, anger, etc., from input text using **Natural Language Processing (NLP)** and a **deep learning LSTM model**.
 
-It was built using the dair-ai/emotion dataset and includes full preprocessing, model training, and a Gradio-based web interface.
-It detects emotion in a class of 6 -> [sadness,joy,love,anger,fear,surprise]
+It uses the [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion) dataset and includes complete preprocessing, model training, and a Gradio-based user interface.
 
-Project Structure:
+---
 
--> prepro.ipynb           # Text preprocessing
+## 🔥 Emotion Classes
 
--> emo_lstm_model.ipynb   # Model building and training
+The model classifies input into one of the following six emotions:
 
--> gradio_app.py          # Gradio UI code
+```
+['sadness', 'joy', 'love', 'anger', 'fear', 'surprise']
+```
 
--> lstm_emo_model.h5      # Trained LSTM model
+---
 
--> tokenizer.pkl          # Saved tokenizer
+## 🗂️ Project Structure
 
--> label_encoder.pkl      # Saved label encoder
+```
+📁 Text_Emotion_detection/
+├── prepro.ipynb            # Text preprocessing
+├── emo_lstm_model.ipynb    # Model building and training
+├── gradio_app.py           # Gradio UI code
+├── lstm_emo_model.h5       # Trained LSTM model
+├── tokenizer.pkl           # Saved tokenizer
+├── label_encoder.pkl       # Saved label encoder
+├── README.md               # Project documentation
+├── demo.png                # Gradio demo screenshot
+```
 
-─> README.md              # Project documentation
+---
 
-## How It Works:
-Text Cleaning:
-Lowercasing, punctuation removal, lemmatization.
+## ⚙️ How It Works
 
-Tokenization + Padding:
-Keras Tokenizer + pad_sequences to convert text into numeric form.
+### ✨ Preprocessing
+- Lowercase conversion
+- URL and special character removal
+- Tokenization
+- Lemmatization
+- Sequence padding
 
-Model:
-A 2-layer LSTM with dropout and dense layers trained using Keras.
+### ✨ Model Architecture
+- 2-layer **Bidirectional LSTM**
+- Dropout layers for regularization
+- Dense softmax output for classification
 
-Inference:
-A saved .h5 model is loaded and used in a Gradio web UI.
+### ✨ Inference
+- Input text is cleaned, tokenized, padded, and passed to the model
+- Predicted emotion is returned as output
 
-## Running the Gradio App:
+---
 
-To launch the web interface locally:
+## 🚀 Run the Gradio App
 
+### ✅ Install dependencies:
+
+```bash
 pip install gradio tensorflow nltk
+```
+
+### ▶️ Launch the app:
+
+```bash
 python gradio_app.py
+```
 
-## Demo Screenshot
+A browser window will open with a simple interface for emotion prediction.
 
-Here is how the Gradio interface looks:
+---
+
+## 🖼️ Demo Screenshot
+
+Here’s how the Gradio interface looks:
 
 ![Emotion Detection Demo](demo.png)
+
+---
+
+## 📊 Dataset Used
+
+- **Dataset**: [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion)
+- **Total Samples**: ~20k
+- **Classes**: 6 emotion categories
+
+---
+
+## 🛠️ Future Improvements
+
+- Add attention mechanism
+- Integrate pre-trained embeddings (like GloVe)
+- Use transformer-based models like BERT
+- Host the app online using Streamlit or Hugging Face Spaces
+
+---
+
+## 👨‍💻 Author
+
+- **Tanmay GSN**
+- GitHub: [Tanmay-gsn](https://github.com/Tanmay-gsn)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
