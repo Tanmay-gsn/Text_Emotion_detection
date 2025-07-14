@@ -7,6 +7,11 @@ It uses the [`dair-ai/emotion`](https://huggingface.co/datasets/dair-ai/emotion)
 This project had an initial aim of 85%+ accuracy which has been completely met with actual validation accuracy of ~90%
 
 ---
+##  Live Demo
+
+Try the app instantly — no installation needed:
+
+[Click here to test the Emotion Detection UI](https://191b39b9b0157d6695.gradio.live)
 
 ##  Emotion Classes
 
