@@ -11,7 +11,7 @@ This project had an initial aim of 85%+ accuracy which has been completely met w
 
 Try the app instantly — no installation needed:
 
-[Click here to test the Emotion Detection UI](https://191b39b9b0157d6695.gradio.live)
+[Click here to test the Emotion Detection UI](https://cf776aaba989569aa3.gradio.live)
 
 ##  Emotion Classes
 
